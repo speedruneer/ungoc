@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="United Nexus Global Operations Command (UNGOC) Website">
+    <title>UNGOC - United Nexus Global Operations Command</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #f1f1f1;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 1.2rem;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            border: 2px solid #f1f1f1;
+            background-color: #444;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .button {
+            background-color: #444;
+            padding: 10px 20px;
+            border: none;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>United Nexus Global Operations Command</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#bases">Bases</a>
+            <a href="#team">Team</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>Welcome to UNGOC</h2>
+        <p>We are an elite faction focused on domination and defense in the world of Minecraft. Our mission is to secure our bases and expand our influence. Explore our goals, bases, and team!</p>
+    </section>
+
+    <section id="bases">
+        <h2>Our Bases</h2>
+        <ul>
+            <li><strong>HQ</strong>: A highly fortified headquarters</li>
+            <li><strong>BOO (Base of Operations)</strong>: A hidden base used for strategic planning</li>
+            <li><strong>Vault Base</strong>: Secure storage for our precious resources</li>
+            <li><strong>Def Base</strong>: Home to our explosive defenses, including the thermonuclear system!</li>
+        </ul>
+    </section>
+
+    <section id="team">
+        <h2>The UNGOC Team</h2>
+        <p>Our team is led by experienced leaders and includes skilled operatives. Each member contributes to our goals with expertise in strategy, base-building, and combat.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you wish to challenge or ally with UNGOC, contact us below:</p>
+        <button class="button" onclick="showAlert()">Click to Contact</button>
+        <p id="contactMessage" class="hidden">You can reach us through our encrypted communication channels.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 United Nexus Global Operations Command. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showAlert() {
+            const message = document.getElementById("contactMessage");
+            message.classList.toggle("hidden");
+        }
+    </script>
+</body>
+</html>
