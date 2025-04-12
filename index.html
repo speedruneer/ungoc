@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="United Nexus Global Operations Command (UNGOC) Website">
+    <meta name="description" content="United Nexus Global Operations Command (UNGOC) - Who We Are">
     <title>UNGOC - United Nexus Global Operations Command</title>
     <style>
-        /* Basic reset */
+        /* Reset some defaults */
         * {
             margin: 0;
             padding: 0;
@@ -14,124 +14,141 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
-            background-color: #1a1a1a;
-            color: white;
+            font-family: 'Arial', sans-serif;
+            background-color: #0d0d0d;
+            color: #e0e0e0;
             line-height: 1.6;
+            margin: 0;
         }
 
         header {
-            background-color: #333;
-            padding: 20px;
+            background-color: #212121;
+            color: white;
+            padding: 30px 20px;
             text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
         }
 
         header h1 {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
+            margin-bottom: 10px;
             letter-spacing: 2px;
         }
 
-        nav {
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
-        }
-
-        nav a {
-            color: #f1f1f1;
-            text-decoration: none;
-            padding: 10px 20px;
-            margin: 0 10px;
+        header p {
             font-size: 1.2rem;
-            border: 2px solid transparent;
-            transition: all 0.3s ease;
-        }
-
-        nav a:hover {
-            border: 2px solid #f1f1f1;
-            background-color: #444;
+            margin-top: 5px;
         }
 
         section {
-            padding: 40px 20px;
+            padding: 50px 20px;
             text-align: center;
         }
 
-        footer {
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ff6347;
+        }
+
+        section p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto 20px auto;
+            line-height: 1.8;
+        }
+
+        .about-content {
             background-color: #333;
-            padding: 20px;
-            text-align: center;
-            position: absolute;
-            width: 100%;
-            bottom: 0;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
         }
 
-        .hidden {
-            display: none;
+        .about-content:hover {
+            transform: scale(1.05);
         }
 
-        .button {
-            background-color: #444;
-            padding: 10px 20px;
-            border: none;
+        .cta-button {
+            display: inline-block;
+            background-color: #ff6347;
             color: white;
-            font-size: 1rem;
-            cursor: pointer;
+            font-size: 1.2rem;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
             transition: background-color 0.3s ease;
         }
 
-        .button:hover {
-            background-color: #666;
+        .cta-button:hover {
+            background-color: #e5533d;
+        }
+
+        footer {
+            background-color: #212121;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .team-img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: opacity 0.3s ease;
+        }
+
+        .team-img:hover {
+            opacity: 0.7;
         }
     </style>
 </head>
 <body>
+
+    <!-- Header Section -->
     <header>
-        <h1>United Nexus Global Operations Command</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#bases">Bases</a>
-            <a href="#team">Team</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <h1>United Nexus Global Operations Command (UNGOC)</h1>
+        <p>Your elite team in the Minecraft world, focused on power, strategy, and defense.</p>
     </header>
 
+    <!-- About Section -->
     <section id="about">
-        <h2>Welcome to UNGOC</h2>
-        <p>We are an elite faction focused on domination and defense in the world of Minecraft. Our mission is to secure our bases and expand our influence. Explore our goals, bases, and team!</p>
+        <h2>Who We Are</h2>
+        <div class="about-content">
+            <p>UNGOC is a specialized faction within the world of Minecraft, dedicated to building powerful defenses, expanding influence, and dominating the virtual landscape. With a well-coordinated and highly skilled team, we secure critical bases and ensure our legacy is unchallenged.</p>
+            <p>We believe in innovation, power, and protection. Our operatives are always ready to defend our interests or launch calculated operations. Our presence is always formidable, and our methods, decisive.</p>
+        </div>
+        <a href="#contact" class="cta-button">Join Us or Learn More</a>
     </section>
 
-    <section id="bases">
-        <h2>Our Bases</h2>
-        <ul>
-            <li><strong>HQ</strong>: A highly fortified headquarters</li>
-            <li><strong>BOO (Base of Operations)</strong>: A hidden base used for strategic planning</li>
-            <li><strong>Vault Base</strong>: Secure storage for our precious resources</li>
-            <li><strong>Def Base</strong>: Home to our explosive defenses, including the thermonuclear system!</li>
-        </ul>
+    <!-- Our Mission Section -->
+    <section id="mission">
+        <h2>Our Mission</h2>
+        <p>Our primary goal is to maintain dominance over the Minecraft world, secure critical assets, and protect the resources of the United Nexus. We operate with a precise strategy that ensures we are always steps ahead of anyone who threatens our control. We stand ready to take on any challenge and crush any opposition.</p>
     </section>
 
+    <!-- Our Team Section -->
     <section id="team">
         <h2>The UNGOC Team</h2>
-        <p>Our team is led by experienced leaders and includes skilled operatives. Each member contributes to our goals with expertise in strategy, base-building, and combat.</p>
+        <p>Our team consists of elite operatives, each specializing in different areas: base-building, combat, strategy, and covert operations. Each member is handpicked for their skills and their dedication to our cause.</p>
+        <img src="team-image.jpg" alt="UNGOC Team" class="team-img">
     </section>
 
+    <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Us</h2>
-        <p>If you wish to challenge or ally with UNGOC, contact us below:</p>
-        <button class="button" onclick="showAlert()">Click to Contact</button>
-        <p id="contactMessage" class="hidden">You can reach us through our encrypted communication channels.</p>
+        <p>Ready to engage with us? Whether you wish to challenge or ally with UNGOC, get in touch with us below:</p>
+        <a href="mailto:ungoc@domain.com" class="cta-button">Contact Us</a>
     </section>
 
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2025 United Nexus Global Operations Command. All rights reserved.</p>
+        <p>&copy; 2025 United Nexus Global Operations Command | All Rights Reserved</p>
     </footer>
 
-    <script>
-        function showAlert() {
-            const message = document.getElementById("contactMessage");
-            message.classList.toggle("hidden");
-        }
-    </script>
 </body>
 </html>
